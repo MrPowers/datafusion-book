@@ -4,7 +4,7 @@ You can easily query a DataFusion table with the Python API or with pure SQL.
 
 Let's create a small DataFrame and then run some queries with both APIs.
 
-Start by creating a DataFrame with four rows of data and columns `a` and `b`.
+Start by creating a DataFrame with four rows of data and two columns: `a` and `b`.
 
 ```python
 from datafusion import SessionContext
@@ -29,7 +29,7 @@ ctx.sql("select a, b, a + b as sum_a_b from my_table")
 +---+---+---------+
 ```
 
-DataFusion makes it very easy to query DataFrames with familiar SQL code.
+DataFusion makes it easy to run SQL queries on DataFrames.
 
 Now let's run the same query with the DataFusion Python API:
 
@@ -56,4 +56,6 @@ We get the same result as before:
 +---+---+-------------------------+
 ```
 
-Python users have two easy ways to query DataFusion tables.
+DataFusion also allows you to query data with a well-designed Python interface.
+
+Python users have two great ways to query DataFusion tables.
